@@ -1,0 +1,14 @@
+{
+  "name": "sanbercode---tugas-2",
+  "version": "1.0.0",
+  "description": "Tugas 2 Javascript di Sanbercode",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Ria",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
