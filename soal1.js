@@ -7,8 +7,6 @@ function akarPangkat(x) {
         return "Tidak bisa input bilangan ganjil";
     } else if(x === 0) {
         return "Akar pangkat 2 dari 0 adalah 0";
-    } else if (x === 1) {
-        return "Akar pangkat 2 dari 1 adalah 1";
     } else {
         return Math.sqrt(x);
     }
