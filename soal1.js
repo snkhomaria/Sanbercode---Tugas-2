@@ -1,17 +1,24 @@
-function akarPangkatDua(x) {
+const prompt = require('prompt-sync')({ sigint: true });
+
+function akarPangkat(x) {
     if (x < 0) {
-        throw "Tidak bisa input bilangan negatif";
+        return "Tidak bisa input bilangan negatif";
     } else if (x % 2 !== 0) {
-        throw "Tidak bisa input bilangan ganjil";
+        return "Tidak bisa input bilangan ganjil";
+    } else if(x === 0) {
+        return "Akar pangkat 2 dari 0 adalah 0";
+    } else if (x === 1) {
+        return "Akar pangkat 2 dari 1 adalah 1";
     } else {
         return Math.sqrt(x);
     }
 }
-
-try {
-    var inputAngka = parseInt(prompt("Masukkan bilangan genap: "));
-    var hasil = akarPangkatDua(inputAngka);
-    console.log("Akar pangkat dua dari", inputAngka, "adalah", hasil);
-} catch (error) {
-    console.log(error);
-}
+  
+const input = parseFloat(prompt("Masukkan bilangan genap : "));
+  
+  if (isNaN(input)) {
+    console.log("Tidak valid, input hanya angka");
+  } else {
+    const hasil = akarPangkat(input);
+    console.log(`Result : ${hasil}`);
+  }
